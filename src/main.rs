@@ -1,6 +1,7 @@
 pub mod day1;
 pub mod day2;
 pub mod day3;
+pub mod day4;
 pub mod utils;
 
 fn main() {
@@ -23,6 +24,11 @@ fn solve_day_1() {
 
     println!("Sum of rucksack priorities: {}", day3::solve_part_1(&res));
     println!("Sum of rucksack priorities for badge groups: {}", day3::solve_part_2(&res));
+
+    res = utils::file::read_input("day4".to_string());
+
+    println!("Fully contained assignment pairs: {}", day4::solve_part_1(&res));
+    println!("Number of overlapping assignments: {}", day4::solve_part_2(&res));
 }
 
 // Output
@@ -32,3 +38,5 @@ fn solve_day_1() {
 // Elf win/lose strategy guide score: 10349
 // Sum of rucksack priorities: 8123
 // Sum of rucksack priorities for badge groups: 2620
+// Fully contained assignment pairs: 507
+// Number of overlapping assignments: 897

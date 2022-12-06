@@ -1,12 +1,12 @@
 use itertools::Itertools;
 
-pub fn solve_part_1(input: &String) -> u32 {
+pub fn solve_part_1(input: &str) -> u32 {
     input.lines()
         .map(calculate_rucksack_priority)
         .sum()
 }
 
-pub fn solve_part_2(input: &String) -> u32 {
+pub fn solve_part_2(input: &str) -> u32 {
     input.lines()
         .tuples::<(_, _, _)>()
         .map(calculate_rucksack_badge_and_priority)

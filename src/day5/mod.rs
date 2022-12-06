@@ -2,7 +2,7 @@ use itertools::Itertools;
 use regex::{Regex, CaptureMatches};
 
 
-pub fn solve_part_1(input: &String) -> String {
+pub fn solve_part_1(input: &str) -> String {
     let (mut stacks, instructions) = parse_initial_stacks_and_instructions(input);
     let re = Regex::new(r"(?m)([\d+]+)").unwrap();
 

@@ -6,15 +6,10 @@ pub mod day5;
 pub mod utils;
 
 fn main() {
-    solve_day_1();
-}
-
-fn solve_day_1() {
     let mut res = utils::file::read_input("day1");
 
     println!("Max calaries carried by any elf: {}", day1::solve_part_1(&res));
     println!("Max calaries carried by top 3 elves: {}", day1::solve_part_2(&res));
-
 
     res = utils::file::read_input("day2");
 

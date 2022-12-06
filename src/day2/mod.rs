@@ -1,11 +1,11 @@
 
-pub fn solve_part_1(input: &String) -> i32 {
+pub fn solve_part_1(input: &str) -> i32 {
     input.lines()
         .map(calculate_strategy_points)
         .sum()
 }
 
-pub fn solve_part_2(input: &String) -> i32 {
+pub fn solve_part_2(input: &str) -> i32 {
     input.lines()
         .map(calculate_desired_strategy)
         .sum()

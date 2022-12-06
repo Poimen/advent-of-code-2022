@@ -1,7 +1,7 @@
 use std::env;
 use std::fs;
 
-pub fn read_input(day: String) -> String {
+pub fn read_input(day: &str) -> String {
     let file_path = env::current_dir()
         .unwrap()
         .join("src")

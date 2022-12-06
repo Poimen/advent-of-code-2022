@@ -3,6 +3,7 @@ pub mod day2;
 pub mod day3;
 pub mod day4;
 pub mod day5;
+pub mod day6;
 pub mod utils;
 
 fn main() {
@@ -30,6 +31,11 @@ fn main() {
 
     println!("Top crates on each stack with CrateMover 9000: {}", day5::solve_part_1(&res));
     println!("Top crates on each stack with CrateMover 9001: {}", day5::solve_part_2(&res));
+
+    res = utils::file::read_input("day6");
+
+    println!("Start of packet index: {}", day6::solve_part_1(&res));
+    println!("Start of message index: {}", day6::solve_part_2(&res));
 }
 
 // Output
@@ -43,3 +49,5 @@ fn main() {
 // Number of overlapping assignments: 897
 // Top crates on each stack with CrateMover 9000: CWMTGHBDW
 // Top crates on each stack with CrateMover 9001: SSCGWJCRB
+// Start of packet index: 1343
+// Start of message index: 2193

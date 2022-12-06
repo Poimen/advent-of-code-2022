@@ -30,6 +30,11 @@ fn solve_day_1() {
 
     println!("Fully contained assignment pairs: {}", day4::solve_part_1(&res));
     println!("Number of overlapping assignments: {}", day4::solve_part_2(&res));
+
+    res = utils::file::read_input("day5");
+
+    println!("Top crates on each stack with CrateMover 9000: {}", day5::solve_part_1(&res));
+    println!("Top crates on each stack with CrateMover 9001: {}", day5::solve_part_2(&res));
 }
 
 // Output
@@ -42,3 +47,4 @@ fn solve_day_1() {
 // Fully contained assignment pairs: 507
 // Number of overlapping assignments: 897
 // Top crates on each stack with CrateMover 9000: CWMTGHBDW
+// Top crates on each stack with CrateMover 9001: SSCGWJCRB

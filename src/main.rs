@@ -4,6 +4,7 @@ pub mod day3;
 pub mod day4;
 pub mod day5;
 pub mod day6;
+pub mod day7;
 pub mod utils;
 
 fn main() {
@@ -36,6 +37,11 @@ fn main() {
 
     println!("Start of packet index: {}", day6::solve_part_1(&res));
     println!("Start of message index: {}", day6::solve_part_2(&res));
+
+    res = utils::file::read_input("day7");
+
+    println!("Sum of the total directories sized less than 100_000: {}", day7::solve_part_1(&res));
+    println!("Size of the smallest directory to delete: {}", day7::solve_part_2(&res));
 }
 
 // Output

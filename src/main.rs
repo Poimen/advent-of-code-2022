@@ -5,6 +5,7 @@ pub mod day4;
 pub mod day5;
 pub mod day6;
 pub mod day7;
+pub mod day8;
 pub mod utils;
 
 fn main() {
@@ -42,6 +43,11 @@ fn main() {
 
     println!("Sum of the total directories sized less than 100_000: {}", day7::solve_part_1(&res));
     println!("Size of the smallest directory to delete: {}", day7::solve_part_2(&res));
+
+    res = utils::file::read_input("day8");
+
+    println!("Number of trees visible from outside: {}", day8::solve_part_1(&res));
+    println!("Best scenic score: {}", day8::solve_part_2(&res));
 }
 
 // Output
@@ -57,3 +63,7 @@ fn main() {
 // Top crates on each stack with CrateMover 9001: SSCGWJCRB
 // Start of packet index: 1343
 // Start of message index: 2193
+// Sum of the total directories sized less than 100_000: 1306611
+// Size of the smallest directory to delete: 13210366
+// Number of trees visible from outside: 1792
+// Best scenic score: 334880

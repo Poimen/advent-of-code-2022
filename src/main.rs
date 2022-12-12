@@ -6,6 +6,7 @@ pub mod day5;
 pub mod day6;
 pub mod day7;
 pub mod day8;
+pub mod day9;
 pub mod utils;
 
 fn main() {
@@ -48,6 +49,11 @@ fn main() {
 
     println!("Number of trees visible from outside: {}", day8::solve_part_1(&res));
     println!("Best scenic score: {}", day8::solve_part_2(&res));
+
+    res = utils::file::read_input("day9");
+
+    println!("Number of positions the tail reached: {}", day9::solve_part_1(&res));
+    println!("Number of positions the tail reached (after snap): {}", day9::solve_part_2(&res));
 }
 
 // Output
@@ -67,3 +73,5 @@ fn main() {
 // Size of the smallest directory to delete: 13210366
 // Number of trees visible from outside: 1792
 // Best scenic score: 334880
+// Number of positions the tail reached: 5960
+// Number of positions the tail reached (after snap): 2327

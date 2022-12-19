@@ -38,8 +38,6 @@ pub fn solve_part_2(input: &str) -> usize {
                 rope[i] = move_tail_to(&rope[i], &rope[i-1]);
             }
 
-            // println!("head: [{:?}] -> [{:?}]", current_head, rope);
-
             tail_movements.insert(*rope.last().unwrap());
         });
 
@@ -81,13 +79,6 @@ fn get_head_movement(input: &str) -> Vec<Point> {
         .fold(Vec::<Point>::new(), |mut accum, m| {
             let mut l = m.split(" ");
             let dir = l.next().unwrap();
-            // let dir = match l.next().unwrap() {
-            //     "R" => Direction::Right,
-            //     "L" => Direction::Left,
-            //     "U" => Direction::Up,
-            //     "D" => Direction::Down,
-            //     _ => panic!("Unknown direction")
-            // };
             let count = l.next().unwrap().parse::<usize>().unwrap();
 
             for _ in 0..count {

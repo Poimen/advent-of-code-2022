@@ -7,6 +7,7 @@ pub mod day6;
 pub mod day7;
 pub mod day8;
 pub mod day9;
+pub mod day10;
 pub mod utils;
 
 fn main() {
@@ -54,6 +55,13 @@ fn main() {
 
     println!("Number of positions the tail reached: {}", day9::solve_part_1(&res));
     println!("Number of positions the tail reached (after snap): {}", day9::solve_part_2(&res));
+
+    res = utils::file::read_input("day10");
+
+    println!("Sum of 6 signal strengths: {}", day10::solve_part_1(&res));
+    println!("Ascii art!:");
+    day10::solve_part_2(&res);
+
 }
 
 // Output
@@ -75,3 +83,11 @@ fn main() {
 // Best scenic score: 334880
 // Number of positions the tail reached: 5960
 // Number of positions the tail reached (after snap): 2327
+// Sum of 6 signal strengths: 11720
+// Ascii art!:
+// "#### ###   ##  ###  #### ###   ##    ## "
+// "#    #  # #  # #  # #    #  # #  #    # "
+// "###  #  # #    #  # ###  #  # #       # "
+// "#    ###  #    ###  #    ###  #       # "
+// "#    # #  #  # # #  #    #    #  # #  # "
+// "#### #  #  ##  #  # #### #     ##   ##  "

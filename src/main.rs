@@ -8,6 +8,7 @@ pub mod day7;
 pub mod day8;
 pub mod day9;
 pub mod day10;
+pub mod day11;
 pub mod utils;
 
 fn main() {
@@ -62,6 +63,11 @@ fn main() {
     println!("Ascii art!:");
     day10::solve_part_2(&res);
 
+    res = utils::file::read_input("day11");
+
+    println!("Level of monkey business after 20 rounds: {}", day11::solve_part_1(&res));
+    println!("Level of monkey business after 10_000 rounds: {}", day11::solve_part_2(&res));
+
 }
 
 // Output
@@ -91,3 +97,5 @@ fn main() {
 // "#    ###  #    ###  #    ###  #       # "
 // "#    # #  #  # # #  #    #    #  # #  # "
 // "#### #  #  ##  #  # #### #     ##   ##  "
+// Level of monkey business after 20 rounds: 119715
+// Level of monkey business after 10_000 rounds: 18085004878
